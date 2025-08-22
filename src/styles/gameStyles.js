@@ -8,13 +8,14 @@ export const styles = {
     fontFamily: 'monospace',
     padding: '2rem',
     minHeight: '100vh',
-    backgroundColor: '#fafafa'
+    backgroundColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   },
 
   title: {
     marginBottom: '2rem',
-    color: '#1f2937',
-    textAlign: 'center'
+    color: '#ffffff',
+    textAlign: 'center',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
   },
 
   gameLayout: {
@@ -66,7 +67,8 @@ export const styles = {
     marginBottom: '0.5rem',
     fontSize: '1.1rem',
     fontWeight: 'bold',
-    color: '#374151'
+    color: '#ffffff',
+    textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
   },
 
   winnerStatus: {
