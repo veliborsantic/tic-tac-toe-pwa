@@ -1,3 +1,4 @@
+import React from 'react'
 import { Square } from './Square'
 import { styles } from '../styles/gameStyles'
 import { 
@@ -41,6 +42,7 @@ export function Board({ xIsNext, squares, onPlay, winningLine }) {
         {squares.map((value, index) => (
           <Square
             key={`square-${index}`}
+            index={index}
             value={value}
             onSquareClick={() => handleSquareClick(index)}
             isWinning={winningLine && winningLine.includes(index)}

@@ -1,6 +1,8 @@
 import { useGameStore } from '../store/gameStore'
 import { Board } from '../components/Board'
-import { Stats } from '../components/Stats'
+import dynamic from 'next/dynamic'
+// Stats is a named export; dynamic() expects a default export, so map to the named export
+const Stats = dynamic(() => import('../components/Stats').then(mod => mod.Stats), { ssr: false })
 import { GameHistory } from '../components/GameHistory'
 import { GameControls } from '../components/GameControls'
 

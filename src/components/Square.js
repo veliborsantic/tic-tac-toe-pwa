@@ -1,3 +1,4 @@
+import React from 'react'
 import { styles } from '../styles/gameStyles'
 
 /**
@@ -8,7 +9,7 @@ import { styles } from '../styles/gameStyles'
  * @param {boolean} props.isWinning - Whether this square is part of winning line
  * @returns {JSX.Element} Square component
  */
-export function Square({ value, onSquareClick, isWinning }) {
+export function Square({ value, onSquareClick, isWinning, index }) {
   const squareStyle = {
     ...styles.square,
     ...(isWinning && styles.winningSquare),
@@ -18,6 +19,7 @@ export function Square({ value, onSquareClick, isWinning }) {
   return (
     <div
       style={squareStyle}
+      data-testid={index !== undefined ? `square-${index}` : 'square'}
       onClick={onSquareClick}
     >
       {value || ''}
