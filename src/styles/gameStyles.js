@@ -8,7 +8,7 @@ export const styles = {
     fontFamily: 'monospace',
     padding: '2rem',
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #a8e6cf 0%, #88d8c0 50%, #6bcb77 100%)'
+    background: 'linear-gradient(135deg, #87ceeb 0%, #5f9ea0 50%, #4682b4 100%)'
   },
 
   title: {
